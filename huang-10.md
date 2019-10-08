@@ -9,11 +9,34 @@
 - +checkPassword(password: String): Boolean
 - +forgotPassword(): Boolean
 - +resetPassword(username: String)
+## Class: Course
+### Variables
+- +courseNumber: String
+- +courseName: String
+- +instructor: String
+- +ta: String
+- +section: int
+### Methods
+- +selectCourse
+## Class: Assignment
+### Variables
+- +assignmentName: String
+- +assignmentType: String
+- +due: datetime
+- +submitted: datetime
+- +acceptedFileTyles: String[]
+- +latePolicy
+### Methods
+- upload
+- submit
+- resubmit
 ## Class: Student extends User
 ### Variables
 ### Methods
-- Select course
-- Read assignment
+- getCourseData(Course)
+  Select course
+- getAssignmentData(Assignment)
+  Read assignment
 - Select assignment
 - Upload file
 - Comment on submission
