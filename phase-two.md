@@ -12,3 +12,5 @@
 7. Together, build a final document called 'overview.md', which includes the following: 
     - List of core objects that seem consistent across all of your designs/documents/to-dos
     - A short 3-5 sentence description of what your next steps would be if you were building this project as a team. 
+
+Working from: https://github.com/computationalmystic/sengfs19/blob/master/assignments/4-assignment-3-support-files/4-Design-requirements.md
