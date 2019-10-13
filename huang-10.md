@@ -20,13 +20,18 @@
 - +selectCourse
 ## Class: Assignment
 ### Variables
-- +assignmentName: String
+- +name: String
+- +description: String
+- +course: String
+- +section: int
 - +assignmentType: String
+- +fileTypes: String[]
 - +due: datetime
 - +submitted: datetime
-- +acceptedFileTyles: String[]
-- +latePolicy
+- +grade: double
+- +latePolicy: double
 ### Methods
+- +«constructor» Assignment(name: String, description: String, course: String, section: int, assignmentType: String, fileTypes: String[], due: datetime, submitted: datetime, grade: double, latePolicy: double)
 - upload
 - submit
 - resubmit
@@ -71,4 +76,4 @@
 - +due: Date
 - +submitted: Date
 ### Methods
-- +«constructor» Assignment(name: String, course: String, section: int, file-types: String, grade: double, due: Date, submitted: Date)
+
