@@ -29,6 +29,7 @@
 * +year: int
 * +major: String
 ### Methods
+* +«constructor»Student(login: Credentials)
 * +getAssignments(): Assignment[]
 * +getAssignment(name: String, class: String): Assignment
 * +submit(assignment: Assignment, file: File, comment: String)
@@ -38,6 +39,8 @@
 * +course: Course
 * +section: Section
 ### Methods
+* +«constructor»User(login: Credentials)
+* -assign(course: Course, section: Section)
 * +viewAssignment(name: String): Assignment
 * +viewAllAssignments(): Assignment[]
 * +viewSubmission(assignment: Assignment, student: Student): Submission
@@ -52,6 +55,7 @@
 * +tas: TA[]
 * roster: Student[]
 ### Methods
+* +«constructor»Instructor(login: Credentials)
 * +createCourse(courseNum: String)
 * +editCourse(course: Course)
 * +removeCourse(course: Course)
@@ -72,6 +76,7 @@
 ## Class: System Administrator extends User
 ### Attributes
 ### Methods
+* +«constructor»User(login: Credentials, key: int)
 * +addInstructor(person: Instructor)
 * +deleteInstructor(person: Instructor)
 * +modifyInstructor(person: Instructor)
@@ -97,7 +102,6 @@
 * +roster: Student[]
 ### Methods
 * +«constructor»Section(course: Course)
-* +
 
 ## Class: Assignment
 ### Attributes
@@ -116,11 +120,15 @@
 * +assignment: Assignment
 * +student: Student
 * +file: File
+* +timeStamp: dateTime
 ### Methods
-* +upload(file: File)
+* +«constructor»Submission(file: File, assignment: Assignment, timeStamp: dateTime)
 * +remove()
 
 ## Class: Grade
 ### Attributes
 * +percent: double
+* +comment: String
+* +timeStamp: dateTime
 ### Methods
+* +«constructor»Grade(submission: Submission, comment: String, timeStamp: dateTime)
