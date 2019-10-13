@@ -71,3 +71,4 @@
 - +due: Date
 - +submitted: Date
 ### Methods
+- +«constructor» Assignment(name: String, course: String, section: int, file-types: String, grade: double, due: Date, submitted: Date)
