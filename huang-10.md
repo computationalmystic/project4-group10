@@ -8,7 +8,7 @@
 - +«constructor» User(username: String, password: String)
 - +checkUsername(username: String): Boolean - compare username to existing usernames in database
 - +checkPassword(password: String): Boolean - compare password to existing password in database
-- +forgotPassword(): Boolean - prompts user to enter email address if password is forgotten
+- +forgotPassword(email: String): Boolean - prompts user to enter email address if password is forgotten
 - +resetPassword(username: String)
 ## Class: Course
 ### Variables
@@ -28,19 +28,18 @@
 - +course: String
 - +section: int
 - +assignmentType: String
-- +fileTypes: String[]
+- +fileTypes: String[] - array of accepted file types
 - +due: datetime
 - +submitted: datetime
 - +grade: double
 - +latePolicy: double
 ### Methods
 - +«constructor» Assignment(name: String, description: String, course: String, section: int, assignmentType: String, fileTypes: String[], fileName: String, due: datetime, submitted: datetime, grade: double, latePolicy: double, comments: String)
+- +- selectAssignment - return page with assignment name, description, course, section, assignment type, file types, file name, due date/time, submission date/time, grade, late policy, and comment history
 ## Class: Student extends User
 ### Variables
+- -grade: double
 ### Methods
-- getCourseData(Course)
-  Select course
-- getAssignmentData(Assignment) - return page with assignment name, description, course, section, assignment type, file types, file name, due date/time, submission date/time, grade, late policy, and comment history
 - Select assignment
 - Upload file - set file path
 - Comment on submission - append to comments
@@ -48,14 +47,12 @@
 ## Class: TA extends User
 ### Variables
 ### Methods
-- Select course
-- View assignment
 - View submission
-- Search student
+- Search student - if student is not enrolled in course, prompt "Student not found"
 - Download file
 ## Class: Instructor extends TA
 ### Variables
-- active: Boolean
+- active: Boolean - true if active, false if inactive
 ### Methods
 - Create/edit/remove courses and sections
 - Add/remove TAs
@@ -65,14 +62,3 @@
 ### Variables
 ### Methods
 - Add/edit/remove/disable Instructors
-## Class: Assignment
-### Variables
-- +name: String
-- +course: String
-- +section: int
-- +file-types: String
-- +grade: double
-- +due: Date
-- +submitted: Date
-### Methods
-
