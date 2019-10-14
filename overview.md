@@ -52,7 +52,7 @@
 - +tas: TA[]
 - +sections: Section[]
 ### Methods
-- +«constructor» Course
+- +«constructor» Course(courseNumber: String, instructor: Instructor)
 ## Class: Section
 ### Variables
 - +courseNumber: String
