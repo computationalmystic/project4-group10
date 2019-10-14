@@ -42,14 +42,13 @@
 ### Variables
 - -grade: double
 ### Methods
-- Select assignment
 - Upload file - set file path
 - Comment on submission - append to comments
 - Submit/resubmit file - append file path, record submission date/time
 ## Class: TA extends User
 ### Variables
 ### Methods
-- View submission
+- View submission - return file name, submission date/time, and comment history
 - Search student - if student is not enrolled in course, prompt "Student not found"
 - Download file
 ## Class: Instructor extends TA
