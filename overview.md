@@ -21,7 +21,7 @@
 ### Methods
 - #«constructor» TA(username: String, password: String)
 - #searchStudent(name): Student
-## Class: Instructor extends User (or TA?)
+## Class: Instructor extends TA
 ### Variables
 - -tas: TA[]
 - -students: Student[]
