@@ -19,6 +19,7 @@
 - +instructor: String
 - +ta: String
 - +assignmentWeight: double
+- +assignemnts[]
 ### Methods
 - +«constructor» Course(courseNumber: String, section: int, courseName: String, instructor: String, ta: String, +assignmentWeight: double)
 - +selectCourse - return page with course number, section number, course name, instructor, TA, and assignment weights
@@ -40,6 +41,8 @@
 - +selectAssignment - return page with assignment name, description, course, section, assignment type, file types, file name, due date/time, submission date/time, grade, late policy, and comment history
 ## Class: Student extends User
 ### Variables
+- -course
+- -section
 - -grade: double
 ### Methods
 - Upload file - set file path
@@ -47,6 +50,8 @@
 - Submit/resubmit file - append file path, record submission date/time
 ## Class: TA extends User
 ### Variables
+- -course
+- -section
 ### Methods
 - View submission - return file name, submission date/time, and comment history
 - Search student - if student is not enrolled in course, prompt "Student not found"
