@@ -13,38 +13,38 @@
 - -course: Course
 - -section: Section
 ### Methods
-- +«constructor» Student(username: String, password: String)
+- -«constructor» Student(username: String, password: String)
 ## Class: TA extends User
 ### Variables
 - -course: Course
 - -section: Section
 ### Methods
-- +«constructor» TA(username: String, password: String)
-- searchStudent(name): Student
+- #«constructor» TA(username: String, password: String)
+- #searchStudent(name): Student
 ## Class: Instructor extends User (or TA?)
 ### Variables
-- tas: TA[]
-- students: Student[]
+- -tas: TA[]
+- -students: Student[]
 ### Methods
-- «constructor» Instructor(username: String, password: String)
-- addCourse(courseNumber: String)
-- editCourse(course: Course)
-- removeCourse(course: Course)
-- addSection(course: Course)
-- editSection(section: Section)
-- removeSection(section: Section)
-- addTA(ta: TA, course: Course)
-- removeTA(ta: TA)
-- addAssignment(name: String, course: String, section: int, due: datetime, submitted: datetime)
-- editAssignment(assignment: Assignment)
-- removeAssignment(assignment: Assignment)
+- -«constructor» Instructor(username: String, password: String)
+- -addCourse(courseNumber: String)
+- -editCourse(course: Course)
+- -removeCourse(course: Course)
+- -addSection(course: Course)
+- -editSection(section: Section)
+- -removeSection(section: Section)
+- -addTA(ta: TA, course: Course)
+- -removeTA(ta: TA)
+- -addAssignment(name: String, course: String, section: int, due: datetime, submitted: datetime)
+- -editAssignment(assignment: Assignment)
+- -removeAssignment(assignment: Assignment)
 ## Class: System Administrator extends User
 ### Variables
 ### Methods
-- +«constructor» SystemAdmin(username: String, password: String)
-- +addInstructor(instructor: Instructor)
-- +editInstructor(instructor: Instructor)
-- +removeInstructor(instructor: Instructor)
+- -«constructor» SystemAdmin(username: String, password: String)
+- -addInstructor(instructor: Instructor)
+- -editInstructor(instructor: Instructor)
+- -removeInstructor(instructor: Instructor)
 ## Class: Course
 ### Variables
 - +courseNumber: String
