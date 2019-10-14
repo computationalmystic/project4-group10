@@ -2,39 +2,39 @@
 ### Samantha, Michelle, Byron
 
 ## Commonalities
-### Class: User
-#### Variables
-#### Methods
+## Class: User
+### Variables
+### Methods
 - «constructor» User
-### Class: Student
-#### Variables
-#### Methods
+## Class: Student
+### Variables
+### Methods
 - «constructor» Student
-### Class: TA
-#### Variables
-#### Methods
+## Class: TA
+### Variables
+### Methods
 - «constructor» TA
-### Class: Instructor
-#### Variables
-#### Methods
+## Class: Instructor
+### Variables
+### Methods
 - «constructor» Instructor
-### Class: System Administrator
-#### Variables
-#### Methods
+## Class: System Administrator
+### Variables
+### Methods
 - +addInstructor
 - +removeInstructor
 - +modifyInstructor
-### Class: Course
-#### Variables
+## Class: Course
+### Variables
 - +courseNumber: String
 - +instructor
 - +tas[]
 - section
-#### Methods
+### Methods
 - «constructor» Course
-### Class: Assignment
-#### Variables
-#### Methods
+## Class: Assignment
+### Variables
+### Methods
 - +«constructor» Assignment
 
 ## Next Steps
